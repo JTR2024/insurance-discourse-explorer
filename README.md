@@ -1,61 +1,49 @@
-# Insurance Discourse Explorer: A Generative AI-Powered Sentiment Analysis
+# Insurance Discourse Explorer
 
-## Project Overview
-This project leverages Generative AI and Natural Language Processing techniques to analyze real-world insurance discussions from social media platforms (Reddit). It demonstrates end-to-end data science workflow capabilities relevant to the insurance industry, from data collection through analysis to visualization.
+## A Generative AI-Powered Sentiment Analysis Tool
+
+This project demonstrates an end-to-end process of building an NLP and Generative AI solution for analyzing insurance-related discussions. The project uses synthetic data designed to mimic typical Reddit comments about insurance topics such as auto insurance, claims, premiums, and customer service experiences.
+
+### Project Overview
+
+The Insurance Discourse Explorer analyzes sentiment patterns in insurance-related discussions using a combination of traditional NLP techniques and modern generative AI approaches (specifically GPT-4). This repository serves as a portfolio demonstration of data science and AI capabilities relevant to the insurance industry.
 
 ### Key Features
-- **Data Collection**: Scraping insurance-related discussions from Reddit using Pushshift API
-- **Sentiment Analysis**: Utilizing GPT-4 to classify posts into positive, negative, or neutral sentiments
-- **Topic Extraction**: Identifying key insurance topics from unstructured text
-- **Retrieval-Augmented Generation (RAG)**: Implementing a vector database for efficient querying of insurance discussions
-- **Interactive Visualization**: Building a Streamlit dashboard to explore sentiments and topics
 
-## Technologies Used
-- **Python**: Core programming language
-- **Pandas/NumPy**: Data manipulation and analysis
-- **OpenAI API**: GPT-4 integration for advanced NLP tasks
-- **FAISS**: Vector database for similarity search
-- **Streamlit**: Interactive web application development
-- **Matplotlib/Seaborn**: Data visualization
+- Synthetic data generation mimicking insurance-related discussions
+- Data cleaning and preprocessing pipeline
+- GPT-4 powered sentiment analysis and classification
+- Topic extraction and categorization
+- Interactive visualizations of sentiment trends
+- (Optional) Retrieval-Augmented Generation (RAG) for intelligent querying
 
-## Project Structure
-```
-Insurance-Discourse-Explorer/
-├── notebooks/
-│   └── insurance_discourse_analysis.ipynb  # Main analysis notebook
-├── app/
-│   ├── app.py                             # Streamlit application
-│   └── utils.py                           # Helper functions
-├── data/
-│   ├── raw/                               # Raw scraped data
-│   └── processed/                         # Cleaned and processed data
-├── models/
-│   └── vector_store/                      # FAISS vector database
-├── requirements.txt                       # Project dependencies
-└── README.md                              # Project documentation
-```
+### Note on Data
 
-## Getting Started
-1. Clone this repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the Jupyter notebook for detailed analysis
-4. Launch the Streamlit app: `streamlit run app/app.py`
+This project uses **synthetic data** rather than actual Reddit comments. This approach ensures:
+- Complete reproducibility without API dependencies
+- Consistent results for demonstration purposes
+- Avoidance of privacy concerns
+- Focus on the technical implementation rather than data acquisition
 
-## Business Applications
-This project demonstrates capabilities directly applicable to insurance industry challenges:
-- **Customer Sentiment Analysis**: Understanding public perception of insurance products and services
-- **Competitive Intelligence**: Analyzing discussions about competitors
-- **Product Development**: Identifying pain points and opportunities from real customer feedback
-- **Risk Assessment**: Detecting emerging concerns in the insurance landscape
+### Technologies Used
 
-## Future Enhancements
-- Expand data sources to include Twitter, news articles, and other platforms
-- Implement more sophisticated domain adaptation for commercial insurance
-- Develop automated reporting for sentiment trends over time
-- Add additional NLP models for comparative analysis
+- Python
+- Pandas & NumPy for data manipulation
+- OpenAI API (GPT-4) for sentiment analysis and text generation
+- Transformers library for additional NLP capabilities
+- Matplotlib/Seaborn/Plotly for visualizations
+- Streamlit for interactive dashboard (optional)
 
-## License
-MIT
+### Project Structure
 
-## Contact
-[John Russell](jtruss.info@gmail.com) 
+- `notebooks/`: Jupyter notebooks with step-by-step implementation
+- `data/`: Directory containing synthetic datasets
+- `src/`: Source code for reusable components
+- `app.py`: Streamlit application for interactive exploration (if implemented)
+- `requirements.txt`: Dependencies for reproducing the environment
+
+### Getting Started
+
+Instructions for setting up and running the project will be added as development progresses.
+
+---
