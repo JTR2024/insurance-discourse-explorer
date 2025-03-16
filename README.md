@@ -6,13 +6,13 @@ This project demonstrates an end-to-end process of building an NLP and Generativ
 
 ### Project Overview
 
-The Insurance Discourse Explorer analyzes sentiment patterns in insurance-related discussions using a combination of traditional NLP techniques and modern generative AI approaches (specifically GPT-4). This repository serves as a portfolio demonstration of data science and AI capabilities relevant to the insurance industry.
+The Insurance Discourse Explorer analyzes sentiment patterns in insurance-related discussions using a combination of traditional NLP techniques and modern generative AI approaches (specifically GPT-4o). This repository serves as a portfolio demonstration of data science and AI capabilities relevant to the insurance industry.
 
 ### Key Features
 
 - Synthetic data generation mimicking insurance-related discussions
 - Data cleaning and preprocessing pipeline
-- GPT-4 powered sentiment analysis and classification
+- GPT-4o powered sentiment analysis and classification
 - Topic extraction and categorization
 - Interactive visualizations of sentiment trends
 - (Optional) Retrieval-Augmented Generation (RAG) for intelligent querying
@@ -29,7 +29,7 @@ This project uses **synthetic data** rather than actual Reddit comments. This ap
 
 - Python
 - Pandas & NumPy for data manipulation
-- OpenAI API (GPT-4) for sentiment analysis and text generation
+- OpenAI API (GPT-4o) for sentiment analysis and text generation
 - Transformers library for additional NLP capabilities
 - Matplotlib/Seaborn/Plotly for visualizations
 - Streamlit for interactive dashboard (optional)
@@ -44,23 +44,29 @@ This project uses **synthetic data** rather than actual Reddit comments. This ap
 
 ### Getting Started
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/JTR2024/insurance-discourse-explorer.git
-   cd insurance-discourse-explorer
-   ```
+1. **Access the Google Colab notebooks**
+   - Open Google Colab: https://colab.research.google.com/
+   - Go to File > Open Notebook
+   - Select the "GitHub" tab
+   - Enter the repository URL: https://github.com/JTR2024/insurance-discourse-explorer
+   - Choose the notebook you want to run from the list
 
-2. **Set up the environment**
-   ```bash
-   pip install -r requirements.txt
+2. **Set up the Colab environment**
+   - Run the following in a code cell to install any additional required packages:
+   ```python
+   !pip install openai langchain faiss-cpu sentence-transformers streamlit vaderSentiment bertopic
    ```
 
 3. **Configure API keys**
-   - Copy `.env.example` to `.env`
-   - Add your OpenAI API key to the `.env` file
+   - Store your OpenAI API key securely in Colab:
+   ```python
+   import os
+   os.environ["OPENAI_API_KEY"] = "your-api-key-here"  # Replace with your actual API key
+   # Alternatively, use Colab's secrets manager for better security
+   ```
 
 4. **Run the notebooks**
-   - Execute the notebooks in the `notebooks/` directory in numerical order
+   - Execute the notebooks in numerical order
    - Each notebook contains detailed explanations and code for a specific step in the pipeline
 
 ---
