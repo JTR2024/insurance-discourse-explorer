@@ -44,6 +44,23 @@ This project uses **synthetic data** rather than actual Reddit comments. This ap
 
 ### Getting Started
 
-Instructions for setting up and running the project will be added as development progresses.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/JTR2024/insurance-discourse-explorer.git
+   cd insurance-discourse-explorer
+   ```
+
+2. **Set up the environment**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Configure API keys**
+   - Copy `.env.example` to `.env`
+   - Add your OpenAI API key to the `.env` file
+
+4. **Run the notebooks**
+   - Execute the notebooks in the `notebooks/` directory in numerical order
+   - Each notebook contains detailed explanations and code for a specific step in the pipeline
 
 ---
